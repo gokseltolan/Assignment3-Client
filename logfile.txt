@@ -1,0 +1,257 @@
+  
+ WSDL LOCATION: https://cryptic-citadel-81782.herokuapp.com/ws/people?wsdl 
+  
+  
+METHOD #1: PRINTING ALL THE PEOPLE 
+  
+  
+Person id: 1
+Person's name: alice
+Person's lastname: diaz
+Person's birthdate: 1990
+Person's e-mail: massenger.com
+Person's username: red
+   
+----alice's Current Lifestatus: 
+	Measure id: 53
+	Measure name: weight
+	Measure type: double
+	Value: 72.2
+	Date: 0006
+   
+----alice's Current Lifestatus: 
+	Measure id: 54
+	Measure name: height
+	Measure type: double
+	Value: 196
+	Date: 0006
+   
+  
+  
+Person id: 2
+Person's name: goksel
+Person's lastname: tolan
+Person's birthdate: 2000
+Person's e-mail: gmail.com
+Person's username: blue
+   
+  
+  
+Person id: 3
+Person's name: bishruti
+Person's lastname: siku
+Person's birthdate: 1992
+Person's e-mail: yahoo.com
+Person's username: green
+   
+----bishruti's Current Lifestatus: 
+	Measure id: 103
+	Measure name: weight
+	Measure type: double
+	Value: 82.2
+	Date: 0006
+   
+  
+  
+Person id: 4
+Person's name: sarah
+Person's lastname: marcon
+Person's birthdate: 1995
+Person's e-mail: hotmail.com
+Person's username: yellow
+   
+----sarah's Current Lifestatus: 
+	Measure id: 153
+	Measure name: height
+	Measure type: double
+	Value: 172.6
+	Date: 0009
+   
+  
+  
+Person id: 5
+Person's name: ana
+Person's lastname: daniel
+Person's birthdate: 1992
+Person's e-mail: yahoo.com
+Person's username: orange
+   
+----ana's Current Lifestatus: 
+	Measure id: 203
+	Measure name: weight
+	Measure type: double
+	Value: 88
+	Date: 0010
+   
+----ana's Current Lifestatus: 
+	Measure id: 371
+	Measure name: height
+	Measure type: double
+	Value: 182.5
+	Date: 0010
+   
+  
+  
+Person id: 217
+Person's name: matteo
+Person's lastname: carlo
+Person's birthdate: 1995
+Person's e-mail: hotmail.com
+Person's username: black
+   
+----matteo's Current Lifestatus: 
+	Measure id: 253
+	Measure name: height
+	Measure type: double
+	Value: 162
+	Date: 0006
+   
+  
+Total People number: 6
+  
+METHOD #2: PRINTING 1st PEOPLE 
+  
+  
+Person id: 1
+Person's name: alice
+Person's lastname: diaz
+Person's birthdate: 1990
+Person's e-mail: massenger.com
+Person's username: red
+   
+----alice's Current Lifestatus: 
+	Measure id: 53
+	Measure name: weight
+	Measure type: double
+	Value: 72.2
+	Date: 0006
+   
+----alice's Current Lifestatus: 
+	Measure id: 54
+	Measure name: height
+	Measure type: double
+	Value: 196
+	Date: 0006
+   
+  
+METHOD #3: UPDATE 2nd PEOPLE's username with (username + random number)
+-----Person 2 Before Updating-----
+  
+  
+Person id: 2
+Person's name: goksel
+Person's lastname: tolan
+Person's birthdate: 2000
+Person's e-mail: gmail.com
+Person's username: blue
+   
+-----Person 2 After Updating-----
+  
+  
+Person id: 2
+Person's name: goksel
+Person's lastname: tolan
+Person's birthdate: 2000
+Person's e-mail: gmail.com
+Person's username: blue97
+   
+  
+METHOD #4: CREATE new PEOPLE with lifestatus
+NEW PEOPLE CREATED
+Current Life CREATED
+  
+  
+Person id: 251
+Person's name: bred
+Person's lastname: alex
+Person's birthdate: 1992
+Person's e-mail: yahoo
+Person's username: puppy
+   
+----bred's Current Lifestatus: 
+	Measure id: 403
+	Measure name: height
+	Measure type: double
+	Value: 168.0
+	Date: 0011
+   
+  
+METHOD #5: Delete the Last People
+  
+Total People number before delete: 7
+Total People number after delete: 6
+  
+  
+  
+METHOD #6: Read HealthMeasureHistory of 1st person (just - height)
+  
+   
+Id of Measure History 4
+Measure name: height
+Measure name: double
+Timestamp of the measure: 0001
+Measure's value: 1.82
+   
+   
+Id of Measure History 356
+Measure name: height
+Measure name: double
+Timestamp of the measure: 0002
+Measure's value: 1.83
+   
+  
+   
+METHOD #7: List Measure Types
+   
+weight
+height
+bmi
+steps
+   
+   
+METHOD #8: Read HealthMeasureHistory of 1st person (measureid = 4)
+   
+   
+Id of Measure History 4
+Measure name: height
+Measure name: double
+Timestamp of the measure: 0001
+Measure's value: 1.82
+   
+METHOD #9 Save Person Measure for 5th person and update HealthMeasureHistroy
+Before saving
+----ana's Current Lifestatus: 
+	Measure id: 371
+	Measure name: height
+	Measure type: double
+	Value: 182.5
+	Date: 0010
+   
+After saving
+ana's new height value is 185.9
+----ana's Current Lifestatus: 
+	Measure id: 0
+	Measure name: height
+	Measure type: double
+	Value: 185.9
+	Date: 0015
+   
+   
+Method #10 Updating person's measure measureid=253 personid=217
+   
+Before update
+----matteo's Current Lifestatus: 
+	Measure id: 253
+	Measure name: height
+	Measure type: double
+	Value: 162
+	Date: 0006
+   
+After update
+----matteo's Current Lifestatus: 
+	Measure id: 253
+	Measure name: height
+	Measure type: double
+	Value: 177
+	Date: 1007
+   
